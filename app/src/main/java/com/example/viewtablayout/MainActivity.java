@@ -28,14 +28,17 @@ public class MainActivity extends AppCompatActivity {
         tabLayout=findViewById(R.id.Tab_Layout);
         viewPager2=findViewById(R.id.viewPager2);
 
-        viewPagerAdapter=new ViewPagerAdapter(this);
 
+
+        viewPagerAdapter=new ViewPagerAdapter(this);
         viewPager2.setAdapter(viewPagerAdapter);
 
 
        new TabLayoutMediator(
                tabLayout,
                viewPager2,
+
+
                (tab, position) -> {
                    tab.setText(tabName[position]);
 
@@ -47,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+//        Video LInk   Youtub ===https://youtu.be/nIPwtHdkzJE?si=i5YiZv9-4DsntBdg
 
 
 
